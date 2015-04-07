@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/print_ticket"
+        android:title="IMPRIMIR RECIBO"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/send_order"
+        android:title="ENVIAR"
+        app:showAsAction="always">
+    </item>
+
+
+</menu>

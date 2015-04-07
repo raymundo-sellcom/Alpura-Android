@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="drawer_items_icons_salesman_ragasa">
+        <item>@drawable/nav_draw_01</item>
+        <item>@drawable/nav_draw_02</item>
+        <item>@drawable/nav_draw_03</item>
+        <item>@drawable/nav_draw_04</item>
+        <item>@drawable/nav_draw_05</item>
+        <item>@drawable/nav_draw_06</item>
+        <item>@drawable/nav_draw_07</item>
+        <item>@drawable/nav_draw_08</item>
+    </array>
+
+    <array name="weather_icons">
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>@drawable/h_light_rain</item>
+        <item>@drawable/h_light_rain</item>
+        <item>null</item>
+        <item>@drawable/h_heavy_rain</item>
+        <item>@drawable/h_heavy_rain</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>@drawable/h_haze</item>
+        <item>@drawable/h_haze</item>
+        <item>@drawable/h_haze</item>
+        <item>@drawable/h_haze</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>@drawable/h_cloudy</item>
+        <item>@drawable/h_cloudy</item>
+        <item>@drawable/h_cloudy</item>
+        <item>@drawable/h_cloudy</item>
+        <item>@drawable/h_cloudy</item>
+        <item>@drawable/h_sun</item>
+        <item>@drawable/h_sun</item>
+        <item>@drawable/h_sun</item>
+        <item>@drawable/h_sun</item>
+        <item>null</item>
+        <item>@drawable/h_sun</item>
+        <item>@drawable/h_heavy_rain</item>
+        <item>@drawable/h_heavy_rain</item>
+        <item>@drawable/h_heavy_rain</item>
+        <item>@drawable/h_heavy_rain</item>
+        <item>null</item>
+        <item>null</item>
+        <item>null</item>
+        <item>@drawable/h_cloudy</item>
+        <item>@drawable/h_heavy_rain</item>
+        <item>null</item>
+        <item>@drawable/h_heavy_rain</item>
+    </array>
+
+    <array name="container_array">
+        <item>@string/con_pieza</item>
+        <item>@string/con_caja</item>
+    </array>
+
+    <array name="search_type_array">
+        <item>@string/ord_search_name</item>
+        <item>@string/ord_search_sku</item>
+    </array>
+
+
+</resources>

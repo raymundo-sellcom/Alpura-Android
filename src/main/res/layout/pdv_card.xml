@@ -1,0 +1,170 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android           ="http://schemas.android.com/apk/res/android"
+    android:id              ="@+id/card_view"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="match_parent"
+    android:layout_margin   ="5dp"
+    android:clickable       ="true"
+    android:foreground      ="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width    ="match_parent"
+        android:layout_height   ="match_parent"
+        android:orientation     ="vertical">
+
+        <LinearLayout
+            android:layout_width    ="match_parent"
+            android:layout_height   ="wrap_content"
+            android:orientation     ="horizontal">
+            <TextView
+                android:id              ="@+id/txt_pdv_name"
+                android:layout_width    ="0dp"
+                android:layout_weight   ="1"
+                android:layout_height   ="wrap_content"
+                android:background      ="@color/primaryColor"
+                android:gravity         ="center_vertical|left"
+                android:padding         ="3dp"
+                android:textColor       ="@android:color/white"
+                android:textSize        ="20sp"/>
+
+            <TextView
+                android:id              ="@+id/txt_pdv_number"
+                android:layout_width    ="0dp"
+                android:layout_weight   ="1"
+                android:layout_height   ="wrap_content"
+                android:background      ="@color/primaryColor"
+                android:gravity         ="center_vertical|right"
+                android:padding         ="3dp"
+                android:textColor       ="@android:color/white"
+                android:textSize        ="20sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id                  ="@+id/lyt_pdv_address"
+            android:layout_width        ="match_parent"
+            android:layout_height       ="match_parent"
+            android:layout_marginTop    ="10dp"
+            android:orientation         ="horizontal">
+            <TextView
+                android:layout_width        ="0dp"
+                android:layout_weight       ="1"
+                android:layout_height       ="wrap_content"
+                android:text                ="Dirección:"
+                android:textColor           ="@color/primaryDarkColor"
+                android:gravity             ="center_vertical"
+                android:textSize            ="15sp"
+                android:layout_marginLeft   ="5dp"/>
+            <TextView
+                android:id                  ="@+id/txt_pdv_address"
+                android:layout_width        ="0dp"
+                android:layout_weight       ="1"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="center_vertical"
+                android:textSize            ="15sp"
+                android:textColor           ="@color/primaryDarkColor"
+                android:layout_marginLeft   ="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id                  ="@+id/lyt_pdv_init_date_time"
+            android:layout_width        ="match_parent"
+            android:layout_height       ="match_parent"
+            android:layout_marginTop    ="10dp"
+            android:orientation         ="horizontal"
+            android:visibility          ="gone">
+            <TextView
+                android:layout_width        ="0dp"
+                android:layout_weight       ="1"
+                android:layout_height       ="wrap_content"
+                android:text                ="Hora Agendada:"
+                android:gravity             ="center_vertical"
+                android:textSize            ="12sp"
+                android:layout_marginLeft   ="5dp"/>
+            <TextView
+                android:id                  ="@+id/txt_pdv_init_date_time"
+                android:layout_width        ="0dp"
+                android:layout_weight       ="1"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="center_vertical"
+                android:textSize            ="12sp"
+                android:layout_marginLeft   ="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id                  ="@+id/lyt_pdv_status"
+            android:layout_width        ="match_parent"
+            android:layout_height       ="match_parent"
+            android:layout_marginTop    ="10dp"
+            android:orientation         ="horizontal"
+            android:visibility          ="gone">
+            <TextView
+                android:layout_width        ="0dp"
+                android:layout_weight       ="1"
+                android:layout_height       ="wrap_content"
+                android:text                ="Estatus:"
+                android:gravity             ="center_vertical"
+                android:textSize            ="12sp"
+                android:layout_marginLeft   ="5dp"/>
+            <TextView
+                android:id                  ="@+id/txt_pdv_status"
+                android:layout_width        ="0dp"
+                android:layout_weight       ="1"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="center_vertical"
+                android:textSize            ="12sp"
+                android:layout_marginLeft   ="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id                  ="@+id/lyt_pdv_real_init_date_time"
+            android:layout_width        ="match_parent"
+            android:layout_height       ="match_parent"
+            android:layout_marginTop    ="10dp"
+            android:orientation         ="horizontal"
+            android:visibility          ="gone">
+            <TextView
+                android:layout_width        ="0dp"
+                android:layout_weight       ="1"
+                android:layout_height       ="wrap_content"
+                android:text                ="Hora de inicio real:"
+                android:gravity             ="center_vertical"
+                android:textSize            ="12sp"
+                android:layout_marginLeft   ="5dp"/>
+            <TextView
+                android:id                  ="@+id/txt_pdv_real_init_date_time"
+                android:layout_width        ="0dp"
+                android:layout_weight       ="1"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="center_vertical"
+                android:textSize            ="12sp"
+                android:layout_marginLeft   ="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id                  ="@+id/lyt_pdv_real_end_date_time"
+            android:layout_width        ="match_parent"
+            android:layout_height       ="match_parent"
+            android:layout_marginTop    ="10dp"
+            android:orientation         ="horizontal"
+            android:visibility          ="gone">
+            <TextView
+                android:layout_width        ="0dp"
+                android:layout_weight       ="1"
+                android:layout_height       ="wrap_content"
+                android:text                ="Hora de finalización:"
+                android:gravity             ="center_vertical"
+                android:textSize            ="12sp"
+                android:layout_marginLeft   ="5dp"/>
+            <TextView
+                android:id                  ="@+id/txt_pdv_real_end_date_time"
+                android:layout_width        ="0dp"
+                android:layout_weight       ="1"
+                android:layout_height       ="wrap_content"
+                android:gravity             ="center_vertical"
+                android:textSize            ="12sp"
+                android:layout_marginLeft   ="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

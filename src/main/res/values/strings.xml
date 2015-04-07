@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Alpura Demo</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Drawer options strings (salesman)! -->
+    <string-array name="drawer_items_names_salesman_ragasa">
+        <item>Home</item>
+        <item>Work Plan</item>
+        <item>Recommendations</item>
+        <item>Orders</item>
+        <item>Add prospect customer</item>
+        <item>Settings</item>
+        <item>Log out</item>
+    </string-array>
+
+    <!-- Login Fragment -->
+        <string name="login_user">Username</string>
+        <string name="login_password">Password</string>
+        <string name="login_enter">Sign in</string>
+        <string name="login_version_label">Version</string>
+        <!-- Error messages -->
+            <string name="error_empty_field">Complete this field</string>
+
+    <!-- Main Menu Fragment -->
+        <string name="log_out">Log out?</string>
+        <!-- Module notes -->
+            <string name="add_note">Add new note</string>
+            <string name="no_notes">You don\'t have notes</string>
+            <string name="edit_note">Edit note</string>
+            <string name="note_deleted">Note deleted!</string>
+        <!-- Module weather -->
+            <string name="location_unavailable">Unable to get your location</string>
+            <string name="units_celsius">ºC</string>
+            <string name="units_fahrenheit">ºF</string>
+            <string name="units_mph">mph</string>
+            <string name="units_kph">km/h</string>
+            <string name="weather_unavailable">Weather information not available</string>
+        <!-- Module Notifications -->
+            <string name="no_notifications">No notifications</string>
+        <!-- Module Traffic -->
+            <string name="see_traffic">Traffic Information</string>
+
+
+            <string-array name="weather_conditions">
+                <item>	Tornado	</item>
+                <item>	Tropical storm	</item>
+                <item>	Hurricane	</item>
+                <item>	Severe thunderstorms	</item>
+                <item>	Thunderstorms	</item>
+                <item>	Mixed rain and snow	</item>
+                <item>	Mixed rain and sleet	</item>
+                <item>	Mixed snow and sleet	</item>
+                <item>	Freezing drizzle	</item>
+                <item>	Drizzle	</item>
+                <item>	Freezing rain	</item>
+                <item>	Showers	</item>
+                <item>	Showers	</item>
+                <item>	Snow flurries	</item>
+                <item>	Light snow showers	</item>
+                <item>	Blowing snow	</item>
+                <item>	Snow	</item>
+                <item>	Hail	</item>
+                <item>	Sleet	</item>
+                <item>	Dust	</item>
+                <item>	Foggy	</item>
+                <item>	Haze	</item>
+                <item>	Smoky	</item>
+                <item>	Blustery	</item>
+                <item>	Windy	</item>
+                <item>	Cold	</item>
+                <item>	Cloudy	</item>
+                <item>	Mostly cloudy (night)	</item>
+                <item>	Mostly cloudy (day)	</item>
+                <item>	Partly cloudy (night)	</item>
+                <item>	Partly cloudy (day)	</item>
+                <item>	Clear (night)	</item>
+                <item>	Sunny	</item>
+                <item>	Fair (night)	</item>
+                <item>	Fair (day)	</item>
+                <item>	Mixed rain and hail	</item>
+                <item>	Hot	</item>
+                <item>	Isolated thunderstorms	</item>
+                <item>	Scattered thunderstorms	</item>
+                <item>	Scattered thunderstorms	</item>
+                <item>	Scattered showers	</item>
+                <item>	Heavy snow	</item>
+                <item>	Scattered snow showers	</item>
+                <item>	Heavy snow	</item>
+                <item>	Partly cloudy	</item>
+                <item>	Thundershowers	</item>
+                <item>	Snow showers	</item>
+            q<item>	Isolated thundershowers	</item>
+        </string-array>
+
+    <!-- Utils -->
+        <string name="done">Done</string>
+        <string name="cancel">Cancel</string>
+
+    <!-- RequestManager strings -->
+    <string name="req_man_error_contacting_service">Error contacting service</string>
+    <string name="req_man_login_info_error">Invalid Login Info</string>
+    <string name="req_man_login">Logging in…</string>
+    <string name="req_man_retrieving_pdvs">Retrieving Sales Points Data</string>
+    <string name="req_man_check_in">Checking In</string>
+    <string name="req_man_check_out">Checking Out</string>
+    <string name="req_man_get_products">Retrieving products information</string>
+    <string name="req_man_get_budget_cats">Retrieving categories information</string>
+    <string name="req_man_get_budget">Retrieving budget information</string>
+    <string name="req_man_set_order">Sending order</string>
+    <string name="req_man_get_recommendations">Retrieving recommendations information</string>
+
+    <!-- Orders strings -->
+    <string name="ord_criteria_prompt">Tipo Búsqueda</string>
+
+    <string name="ord_search_name">Nombre</string>
+    <string name="ord_search_sku">SKU</string>
+
+    <!-- Budget strings -->
+    <string name="bud_cat_prompt">Categories</string>
+
+    <!-- Products strings -->
+    <string name="ord_prod_prompt">Products</string>
+
+    <string name="product_boxes_lbl">CAJAS</string>
+    <string name="product_pieces_lbl">PIEZAS</string>
+    <string name="product_total_lbl">TOTAL</string>
+    <string name="product_cont_lbl">Contenedor</string>
+
+    <string name="con_pieza">PIEZAS</string>
+    <string name="con_caja">CAJAS</string>
+
+
+    <string name="req_man_retrieving_pdv_detail">Retrieving Sales Point Details</string>
+    <string name="req_man_starting_visit">Starting Visit</string>
+    <string name="req_man_get_pdvs">Retrieving PDVs information</string>
+    <string name="req_man_set_client">Uploading prospect client information</string>
+    <string name="req_man_get_states">Retrieving states information</string>
+    <string name="req_man_get_cities">Retrieving cities information</string>
+    <string name="req_man_retrieving_products_list">Retrieving Products Information</string>
+    <string name="req_man_uploading_order_info">Uploading order info to server</string>
+    <string name="req_man_get_invoices">Retrieving Invoices Information</string>
+    <string name="req_man_send_payment">Uploading payment information</string>
+    <string name="req_man_send_partial_settlement">Uploading partial settlement information</string>
+    <string name="req_man_end_visit">Closing Visit</string>
+    <string name="req_man_logout">Logging out…</string>
+    <string name="req_man_no_invoices">No invoices information available</string>
+
+    <string name="req_man_incomplete_data">Error! incomplete data</string>
+    <string name="req_man_settlement_sent">Partial settlement sent successfully</string>
+    <string name="req_man_no_clients_info">No PDVs information, you cannot take orders</string>
+
+    <string name="req_man_error_visit_already_starter_1">The visit </string>
+    <string name="req_man_error_visit_already_starter_2"> has already started </string>
+    <string name="req_man_error_visit_already_ended_2"> has already ended </string>
+    <string name="req_man_error_incomplete_data_new_client">RFC and name fields are required to save a new prospect client</string>
+    <string name="req_man_new_client_sent_successfully">Prospect client sent successfully</string>
+    <string name="req_man_error_credentials">Invalid credentials</string>
+    <string name="req_man_error_empty_payment">Invalid amount to pay information</string>
+
+    <string name="req_man_visit_ended_successfully">Visit closed successfully</string>
+
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>

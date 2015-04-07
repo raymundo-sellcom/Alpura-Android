@@ -1,0 +1,124 @@
+<!-- amartinez@ragasa.com.mx - test-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="match_parent"
+    android:gravity         ="center"
+    android:orientation     ="vertical"
+    android:background      ="@color/white">
+
+    <ImageView
+        android:layout_width            ="wrap_content"
+        android:layout_height           ="wrap_content"
+        android:focusable               ="true"
+        android:layout_gravity          ="center_horizontal"
+        android:focusableInTouchMode    ="true"
+        android:scaleType               ="center"
+        android:src                     ="@drawable/logo_alpura"/>
+
+    <LinearLayout
+        android:layout_width        ="match_parent"
+        android:layout_height       ="wrap_content"
+        android:orientation         ="vertical"
+        android:layout_marginTop    ="10dp"
+        android:layout_marginLeft   ="20dp"
+        android:layout_marginRight  ="20dp"
+        android:background          ="@drawable/login_box_rect"
+        android:elevation           ="4dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id                  ="@+id/txt_login_user"
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            app:baseColor               ="@color/primaryDarkColor"
+            app:primaryColor            ="@color/soft_blue"
+            app:errorColor              ="@color/red"
+            app:floatingLabel           ="highlight"
+            android:hint                ="@string/login_user"
+            android:padding             ="5dp"
+            android:textSize            ="@dimen/sizeMediumText"
+            android:textColor           ="@color/primaryDarkColor"
+            android:gravity             ="center"
+            android:layout_marginTop    ="10dp"
+            android:layout_marginBottom ="10dp"
+            android:layout_marginLeft   ="20dp"
+            android:layout_marginRight  ="20dp"
+            android:inputType           ="textEmailAddress"
+            android:maxLines            ="1"
+            android:singleLine          ="true"
+            android:nextFocusDown       ="@+id/passwordUser"
+            android:text=""
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id                  ="@+id/txt_login_pass"
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:gravity             ="center"
+            android:layout_marginTop    ="10dp"
+            android:layout_marginBottom ="10dp"
+            android:layout_marginLeft   ="20dp"
+            android:layout_marginRight  ="20dp"
+            android:padding             ="5dp"
+            android:textSize            ="@dimen/sizeMediumText"
+            android:textColor           ="@color/primaryDarkColor"
+            android:hint                ="@string/login_password"
+            app:baseColor               ="@color/primaryDarkColor"
+            app:primaryColor            ="@color/soft_blue"
+            app:errorColor              ="@color/red"
+            app:floatingLabel           ="highlight"
+            android:inputType           ="textPassword"
+            android:maxLines            ="1"
+            android:singleLine          ="true"
+            android:text=""/>
+
+        <com.gc.materialdesign.views.ButtonFlat
+            android:id                  ="@+id/bnt_login_enter"
+            android:elevation           ="0dp"
+            android:layout_width        ="wrap_content"
+            android:layout_height       ="wrap_content"
+            android:layout_marginTop    ="20dp"
+            android:layout_marginBottom ="10dp"
+            android:layout_gravity      ="center_horizontal"
+            android:paddingTop          ="10dp"
+            android:paddingBottom       ="10dp"
+            android:paddingLeft         ="20dp"
+            android:paddingRight        ="20dp"
+            android:background          ="@color/accentColor"
+            android:text                ="@string/login_enter"
+            android:textStyle           ="bold"/>
+
+        <Button
+            android:id="@+id/print_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="print"
+            android:textSize="@dimen/sizeLargeText"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background          ="@drawable/login_box_rect"
+            android:elevation           ="2dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id                  ="@+id/version_text"
+        android:layout_width        ="match_parent"
+        android:layout_height       ="wrap_content"
+        android:layout_marginTop    ="50dp"
+        android:textSize            ="@dimen/sizeNormalText"
+        android:textStyle           ="bold"
+        android:gravity             ="center"
+        android:textColor           ="@color/primaryDarkColor"/>
+
+</LinearLayout>
+
+
+

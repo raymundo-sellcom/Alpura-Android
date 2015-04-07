@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation     ="horizontal"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="wrap_content"
+    android:background      ="@color/white">
+
+    <ImageButton
+        android:id              ="@+id/delete_button"
+        android:layout_width    ="wrap_content"
+        android:layout_height   ="match_parent"
+        android:visibility      ="gone"
+        android:background      ="@drawable/button_delete_list_item"
+        android:src             ="@drawable/ic_action_cancel"/>
+
+    <LinearLayout
+        android:layout_width    ="fill_parent"
+        android:layout_height   ="wrap_content"
+        android:layout_gravity  ="center_vertical"
+        android:orientation     ="vertical">
+        <LinearLayout
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:layout_marginBottom ="5dp"
+            android:orientation         ="horizontal"
+            android:background          ="@color/primaryColor">
+
+            <TextView
+                android:id              ="@+id/txt_prod_code"
+                android:layout_width    ="0dp"
+                android:layout_height   ="wrap_content"
+                android:layout_weight   =".25"
+                android:gravity         ="left"
+                android:textColor       ="@color/white"
+                android:textStyle       ="bold"
+                android:textSize        ="@dimen/sizeMediumText"/>
+
+            <TextView
+                android:id                  ="@+id/txt_prod_name"
+                android:layout_width        ="0dp"
+                android:layout_height       ="wrap_content"
+                android:layout_weight       ="1"
+                android:gravity             ="right"
+                android:layout_marginLeft   ="3dp"
+                android:textColor           ="@color/white"
+                android:textSize            ="17sp"/>
+
+            <TextView
+                android:id              ="@+id/txt_prod_pres"
+                android:layout_width    ="0dp"
+                android:layout_height   ="wrap_content"
+                android:layout_weight   =".25"
+                android:padding         ="3dp"
+                android:gravity         ="right"
+                android:textColor       ="@color/white"
+                android:textStyle       ="bold"
+                android:textSize        ="@dimen/sizeMediumText"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width        ="match_parent"
+            android:layout_height       ="wrap_content"
+            android:orientation         ="horizontal"
+            android:layout_marginBottom ="10dp"
+            android:layout_marginTop    ="10dp">
+
+            <TextView
+                android:layout_width    ="0dp"
+                android:layout_height   ="wrap_content"
+                android:layout_weight   =".6"
+                android:paddingLeft     ="5dp"
+                android:gravity         ="left"
+                android:textColor       ="@color/primaryColor"
+                android:text            ="Cantidad: "
+                android:textSize        ="@dimen/sizeMediumText"/>
+
+            <EditText
+                android:id                  ="@+id/edt_product_units"
+                android:layout_width        ="0dp"
+                android:layout_weight       =".3"
+                android:layout_height       ="wrap_content"
+                android:layout_marginLeft   ="3dp"
+                android:layout_marginRight  ="3dp"
+                android:background          ="@color/selected_gray"
+                android:textColor           ="@color/primaryDarkColor"
+                android:textSize            ="@dimen/sizeMediumText"
+                android:inputType           ="number"
+                android:textColorHint       ="@color/primaryColor"
+                android:hint                ="0"
+                android:gravity             ="center"/>
+
+            <Spinner
+                android:id                  ="@+id/spn_product_container"
+                android:layout_width        ="0dp"
+                android:layout_weight       ="1"
+                android:layout_height       ="match_parent"
+                android:layout_marginLeft   ="5dp"
+                android:layout_marginRight  ="5dp"
+                android:prompt              ="@string/product_cont_lbl"
+                android:background          ="@color/selected_gray"
+                android:spinnerMode         ="dropdown"
+                android:backgroundTint      ="@color/selected_gray"
+                android:textSize            ="@dimen/sizeMediumText"
+                android:entries             ="@array/container_array"
+                android:gravity             ="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

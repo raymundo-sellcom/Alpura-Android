@@ -1,0 +1,488 @@
+<LinearLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+    xmlns:tools             ="http://schemas.android.com/tools"
+    android:layout_width    ="match_parent"
+    android:layout_height   ="match_parent"
+    android:orientation     ="vertical"
+    tools:context           ="com.sellcom.apps.tracker_material.Fragments.FragmentBudget">
+
+    <LinearLayout
+        android:layout_marginTop    ="5dp"
+        android:layout_width        ="match_parent"
+        android:layout_height       ="wrap_content"
+        android:orientation         ="horizontal">
+        <TextView
+            android:id              ="@+id/txt_pdv_name"
+            android:layout_width    ="0dp"
+            android:layout_weight   ="1"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="center_vertical|left"
+            android:paddingLeft     ="15dp"
+            android:textColor       ="@color/primaryDarkColor"
+            android:textStyle       ="bold"
+            android:textSize        ="20sp"/>
+
+        <TextView
+            android:id              ="@+id/txt_pdv_number"
+            android:layout_width    ="0dp"
+            android:layout_weight   ="1"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="center_vertical|right"
+            android:paddingRight    ="15dp"
+            android:textColor       ="@color/primaryDarkColor"
+            android:textStyle       ="bold"
+            android:textSize        ="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width        ="match_parent"
+        android:layout_height       ="wrap_content"
+        android:layout_gravity      ="center_vertical"
+        android:layout_marginTop    ="10dp"
+        android:layout_marginLeft   ="5dp"
+        android:layout_marginRight  ="5dp"
+        android:orientation         ="horizontal">
+        <TextView
+            android:layout_width    ="wrap_content"
+            android:layout_height   ="wrap_content"
+            android:gravity         ="center_horizontal"
+            android:layout_gravity  ="center_vertical"
+            android:text            ="Seleccione una categoría"
+            android:textColor       ="@color/primaryDarkColor"
+            android:textSize        ="19sp"/>
+
+        <Spinner
+            android:id                  ="@+id/spn_categories"
+            android:layout_width        ="wrap_content"
+            android:layout_height       ="wrap_content"
+            android:layout_marginLeft   ="10dp"
+            android:prompt              ="@string/bud_cat_prompt"
+            android:background          ="@color/myWindowBackground"
+            android:textColor           ="@color/primaryDarkColor"
+            android:spinnerMode         ="dropdown"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android           ="http://schemas.android.com/apk/res/android"
+        android:id              ="@+id/card_view"
+        android:layout_width    ="match_parent"
+        android:layout_height   ="wrap_content"
+        android:layout_margin   ="10dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width    ="match_parent"
+            android:layout_height   ="match_parent"
+            android:orientation     ="vertical"
+            android:background      ="@color/white">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width    ="match_parent"
+                android:layout_height   ="match_parent"
+                android:orientation     ="horizontal"
+                android:background      ="@color/white"
+                android:weightSum       ="1">
+
+
+                <ImageView
+                    android:id                  ="@+id/img_step_visit"
+                    android:layout_width        ="100dp"
+                    android:layout_height       ="100dp"
+                    android:layout_marginLeft   ="5dp"
+                    android:layout_marginTop    ="5dp"
+                    android:layout_marginBottom ="5dp"
+                    android:layout_gravity      ="center_vertical"
+                    android:scaleType           ="fitCenter"
+                    android:src                 ="@drawable/cat_demo"/>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width    ="match_parent"
+                    android:layout_height   ="match_parent"
+                    android:orientation     ="vertical"
+                    android:background      ="@color/white"
+                    android:weightSum       ="1">
+
+                    <TextView
+                        android:id                  ="@+id/txt_cat_id"
+                        android:layout_width        ="match_parent"
+                        android:layout_weight       =".4"
+                        android:layout_height       ="wrap_content"
+                        android:text                =""
+                        android:gravity             ="center_horizontal"
+                        android:textColor           ="@color/primaryColor"
+                        android:textStyle           ="bold"
+                        android:textSize            ="23sp"/>
+
+                    <TextView
+                        android:id                  ="@+id/txt_cat_name"
+                        android:layout_width        ="match_parent"
+                        android:layout_weight       ="1"
+                        android:layout_height       ="wrap_content"
+                        android:layout_marginLeft   ="5dp"
+                        android:text                =""
+                        android:gravity             ="left"
+                        android:textColor           ="@color/primaryColor"
+                        android:textSize            ="19sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android     ="http://schemas.android.com/apk/res/android"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="match_parent"
+                android:layout_marginLeft   ="5dp"
+                android:layout_marginRight  ="5dp"
+                android:orientation         ="horizontal"
+                android:background          ="@color/white">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_weight       ="1"
+                    android:layout_height       ="wrap_content"
+                    android:text                =" "
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:text                =""
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="Total"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android     ="http://schemas.android.com/apk/res/android"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="match_parent"
+                android:layout_marginLeft   ="5dp"
+                android:layout_marginRight  ="5dp"
+                android:layout_marginTop    ="10dp"
+                android:orientation         ="horizontal"
+                android:background          ="@color/white">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_weight       ="1"
+                    android:layout_height       ="wrap_content"
+                    android:text                ="Vta Día"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_cat_day_sales"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="--"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_tot_day_sales"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="---"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android     ="http://schemas.android.com/apk/res/android"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="match_parent"
+                android:layout_marginLeft   ="5dp"
+                android:layout_marginRight  ="5dp"
+                android:layout_marginTop    ="10dp"
+                android:orientation         ="horizontal"
+                android:background          ="@color/white">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_weight       ="1"
+                    android:layout_height       ="wrap_content"
+                    android:text                ="Promedio Día Marzo &apos;15"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="16sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_cat_month_avg"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="--"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_tot_month_avg"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="---"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android     ="http://schemas.android.com/apk/res/android"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="match_parent"
+                android:layout_marginLeft   ="5dp"
+                android:layout_marginRight  ="5dp"
+                android:layout_marginTop    ="10dp"
+                android:orientation         ="horizontal"
+                android:background          ="@color/white">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_weight       ="1"
+                    android:layout_height       ="wrap_content"
+                    android:text                ="% Día Marzo vs. Ppto."
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_cat_month_perc"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="--"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_tot_month_perc"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="---"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android     ="http://schemas.android.com/apk/res/android"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="match_parent"
+                android:layout_marginLeft   ="5dp"
+                android:layout_marginRight  ="5dp"
+                android:layout_marginTop    ="10dp"
+                android:orientation         ="horizontal"
+                android:background          ="@color/white">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_weight       ="1"
+                    android:layout_height       ="wrap_content"
+                    android:text                ="Promedio Día Febrero &apos;15"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_cat_prev_month_avg"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="--"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_tot_prev_month_avg"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="---"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android     ="http://schemas.android.com/apk/res/android"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="match_parent"
+                android:layout_marginLeft   ="5dp"
+                android:layout_marginRight  ="5dp"
+                android:layout_marginTop    ="10dp"
+                android:orientation         ="horizontal"
+                android:background          ="@color/white">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_weight       ="1"
+                    android:layout_height       ="wrap_content"
+                    android:text                ="Ppto. Día Presupuesto '15"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_cat_ppto"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="--"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_tot_ppto"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="---"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android     ="http://schemas.android.com/apk/res/android"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="match_parent"
+                android:layout_marginLeft   ="5dp"
+                android:layout_marginRight  ="5dp"
+                android:layout_marginTop    ="10dp"
+                android:orientation         ="horizontal"
+                android:background          ="@color/white">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_weight       ="1"
+                    android:layout_height       ="wrap_content"
+                    android:text                ="Meta Día"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_cat_goals"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="--"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_tot_goals"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="---"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android     ="http://schemas.android.com/apk/res/android"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="match_parent"
+                android:layout_marginLeft   ="5dp"
+                android:layout_marginRight  ="5dp"
+                android:layout_marginTop    ="10dp"
+                android:orientation         ="horizontal"
+                android:background          ="@color/white">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_weight       ="1"
+                    android:layout_height       ="wrap_content"
+                    android:text                ="Promedio Día Marzo 14"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="16sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_cat_prev_year_perc"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="--"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_tot_prev_year_perc"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="---"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android     ="http://schemas.android.com/apk/res/android"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="match_parent"
+                android:layout_marginLeft   ="5dp"
+                android:layout_marginRight  ="5dp"
+                android:layout_marginTop    ="10dp"
+                android:orientation         ="horizontal"
+                android:background          ="@color/white">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_weight       ="1"
+                    android:layout_height       ="wrap_content"
+                    android:text                ="% Contra año anterior"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="16sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_cat_perc_a_prev_year"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="--"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_tot_perc_a_prev_year"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="---"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout xmlns:android     ="http://schemas.android.com/apk/res/android"
+                android:layout_width        ="match_parent"
+                android:layout_height       ="match_parent"
+                android:layout_marginLeft   ="5dp"
+                android:layout_marginRight  ="5dp"
+                android:layout_marginTop    ="10dp"
+                android:orientation         ="horizontal"
+                android:background          ="@color/white">
+
+                <TextView
+                    android:layout_width        ="0dp"
+                    android:layout_weight       ="1"
+                    android:layout_height       ="wrap_content"
+                    android:text                ="Dif vs Ant."
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="16sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_cat_dif_vs_ant"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="--"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+                <TextView
+                    android:id                  ="@+id/txt_tot_dif_vs_ant"
+                    android:layout_width        ="wrap_content"
+                    android:layout_weight       =".3"
+                    android:layout_height       ="wrap_content"
+                    android:gravity             ="center_horizontal"
+                    android:text                ="---"
+                    android:textColor           ="@color/primaryDarkColor"
+                    android:textSize            ="17sp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

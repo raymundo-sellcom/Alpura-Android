@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Drawer options strings (salesman)!-->
+    <string-array name="drawer_items_names_salesman_ragasa">
+        <item>Inicio</item>
+        <item>Plan de Trabajo</item>
+        <item>Recomendaciones</item>
+        <item>Pedidos</item>
+        <item>Agregar cliente prospecto</item>
+        <item>Ajustes</item>
+        <item>Cerrar Sesión</item>
+    </string-array>
+
+    <!-- Login Fragment -->
+        <string name="login_user">Usuario</string>
+        <string name="login_password">Contraseña</string>
+        <string name="login_enter">Entrar</string>
+        <string name="login_version_label">Versión</string>
+        <!-- Error messages -->
+            <string name="error_empty_field">Llena este campo</string>
+
+    <!-- Main Menu Fragment -->
+        <string name="log_out">¿Cerrar sesión?</string>
+
+    <!-- Utils -->
+        <string name="done">Hecho</string>
+        <string name="cancel">Cancelar</string>
+
+        <!-- Module notes -->
+            <string name="add_note">Nota nueva</string>
+            <string name="no_notes">No hay notas</string>
+            <string name="edit_note">Editar nota</string>
+            <string name="note_deleted">¡Nota borrada!</string>
+        <!--Module weather-->
+            <string name="location_unavailable">No se pudo obtener su posición</string>
+            <string name="weather_unavailable">No se pudo obtener la información del clima</string>
+        <!-- Module Notifications -->
+            <string name="no_notifications">No hay notificaciones</string>
+        <!-- Module Traffic -->
+            <string name="see_traffic">Ver información de tráfico</string>
+
+
+    <!-- RequestManager strings -->
+    <string name="req_man_error_contacting_service">Error contactando el servicio</string>
+    <string name="req_man_login_info_error">Error de usuario o contraseña</string>
+    <string name="req_man_login">Iniciando sesión</string>
+    <string name="req_man_retrieving_pdvs">Consultando información de puntos de venta</string>
+    <string name="req_man_check_in">Iniciando visita</string>
+    <string name="req_man_check_out">Finalizando visita</string>
+    <string name="req_man_get_budget_cats">Consultando información de categorías</string>
+    <string name="req_man_get_budget">Consultando información de presupuesto</string>
+    <string name="req_man_get_products">Consultando información de productos</string>
+    <string name="req_man_set_order">Enviando pedido</string>
+    <string name="req_man_get_recommendations">Consultando información de recomendaciones</string>
+
+    <!-- Budget strings -->
+    <string name="bud_cat_prompt">Gategorías</string>
+
+    <!-- Products strings -->
+    <string name="ord_prod_prompt">Productos</string>
+
+    <string name="req_man_retrieving_pdv_detail">Consultando detalle de punto de venta</string>
+    <string name="req_man_starting_visit">Enviando información de inicio de visita</string>
+    <string name="req_man_get_pdvs">Consultando información de PDVs</string>
+    <string name="req_man_set_client">Enviando información de cliente prospecto</string>
+    <string name="req_man_get_states">Consultando información de estados</string>
+    <string name="req_man_get_cities">Consultando información de ciudades</string>
+    <string name="req_man_retrieving_products_list">Consultando información de productos</string>
+    <string name="req_man_uploading_order_info">Enviando información de pedido al servidor</string>
+    <string name="req_man_get_invoices">Consultando información de cobranza</string>
+    <string name="req_man_send_payment">Enviando información de pago</string>
+    <string name="req_man_send_partial_settlement">Enviando información de liquidación parcial</string>
+    <string name="req_man_end_visit">Enviando información de fin de visita</string>
+    <string name="req_man_logout">Finalizando sesión</string>
+    <string name="req_man_no_invoices">No se cuenta con información de facturas pendientes</string>
+
+    <string name="req_man_incomplete_data">Error! Datos incompletos</string>
+    <string name="req_man_settlement_sent">Liquidación parcial enviada exitosamente</string>
+    <string name="req_man_no_clients_info">No se tiene información de PDVs, imposible generar pedidos</string>
+
+    <string name="req_man_error_visit_already_starter_1">La visita (</string>
+    <string name="req_man_error_visit_already_starter_2"> ya se ha iniciado </string>
+    <string name="req_man_error_visit_already_ended_2"> ya se ha finalizado </string>
+    <string name="req_man_error_incomplete_data_new_client">El RFC y nombre son campos necesarios para la alta de cliente prospecto.</string>
+    <string name="req_man_new_client_sent_successfully">Información de cliente prospecto enviada satisfactoriamente</string>
+    <string name="req_man_error_credentials">Error de usuario y/o contraseña</string>
+    <string name="req_man_error_empty_payment">Ingrese una cantidad a pagar válida</string>
+
+
+    <string name="req_man_visit_ended_successfully">Visita finalizada exitosamente</string>
+
+
+
+
+</resources>
